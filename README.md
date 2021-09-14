@@ -1,5 +1,17 @@
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod-redirect-0.herokuapp.com/)
 
+
+## Résultats
+Score | Critères
+--- | ---
+1/1 | Retourne l'ocurence d'un caratère dans la chaine
+0/1 | Retourne l'ocurence d'un mot dans la chaine
+1/1 | Vérifie si la longueur de la chaine est pair
+1/1 | Retire le 3e char de la chaine
+1/1 | Remplace un char dans la chaine
+4/5 | **Total**
+
+[Voir détails](./logs/tests_results.txt) | [Rafraîchir](../../)
 # Exercices en vrac (chapitre 4)
 
 Avant de commencer. Consulter les instructions à suivre dans [instructions.md](instructions.md)

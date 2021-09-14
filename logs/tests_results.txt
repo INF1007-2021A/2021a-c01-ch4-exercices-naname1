@@ -1,0 +1,22 @@
+test_get_number_of_char (__main__.TestExercice) ... ok
+test_get_number_of_words (__main__.TestExercice) ... ERROR
+test_pair (__main__.TestExercice) ... ok
+test_remove_third_char (__main__.TestExercice) ... ok
+test_replace_char (__main__.TestExercice) ... ok
+
+======================================================================
+ERROR: test_get_number_of_words (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 75, in test_get_number_of_words
+    output = [exercice.get_number_of_words(v[0], v[1]) for v in values]
+  File "test_exercice.py", line 75, in <listcomp>
+    output = [exercice.get_number_of_words(v[0], v[1]) for v in values]
+  File "/home/runner/work/2021a-c01-ch4-exercices-naname1/2021a-c01-ch4-exercices-naname1/exercice.py", line 47, in get_number_of_words
+    for lettre in string:
+NameError: name 'string' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (errors=1)
