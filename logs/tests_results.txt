@@ -1,29 +1,10 @@
 test_get_number_of_char (__main__.TestExercice) ... ok
-test_get_number_of_words (__main__.TestExercice) ... FAIL
+test_get_number_of_words (__main__.TestExercice) ... ok
 test_pair (__main__.TestExercice) ... ok
 test_remove_third_char (__main__.TestExercice) ... ok
 test_replace_char (__main__.TestExercice) ... ok
 
-======================================================================
-FAIL: test_get_number_of_words (__main__.TestExercice)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 78, in test_get_number_of_words
-    self.assertListEqual(
-AssertionError: Lists differ: [2, 1, 1] != [2, 0, 1]
+Ran 5 tests in 0.000s
 
-First differing element 1:
-1
-0
-
-- [2, 1, 1]
-?     ^
-
-+ [2, 0, 1]
-?     ^
- : Mauvais calcul du nombre d'occurence du mot
-
-----------------------------------------------------------------------
-Ran 5 tests in 0.001s
-
-FAILED (failures=1)
+OK
