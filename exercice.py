@@ -36,7 +36,6 @@ def get_number_of_char(string: str, char: str) -> int:
     for lettre in string:
         if lettre == char:
             resultat += 1
-        print(lettre)
 
     return resultat
 
@@ -46,12 +45,17 @@ def get_number_of_words(sentence: str, word: str) -> int:
 
     for k in range(0,len(sentence)):
         if sentence[k] == word[0]:
+            #Verifier si le mot est trop long pour rentrer entre la fin de la chaine et la ou on est
+            if len(sentence) < k + len(word):
+                break
+
+            #Verifier le mot
             for j in range(1,len(word)):
                 if sentence[k+j] != word[j]:
                     k += j
                     break
                 if j == len(word)-1:
-                    k+=j
+                    k += j
                     resultat += 1
     return resultat
 
@@ -70,7 +74,7 @@ def main() -> None:
 
     print(f"Le nombre d'occurrence de l dans hello est : {get_number_of_char(chaine, 'l')}")
     
-    chaine = "Baby shark doo doo doo doo doo doo"
+    chaine = "Baby shark doo doo doo doo doo doo do"
     print(f"L'occurence du mot doo dans la chaine {chaine} est: {get_number_of_words(chaine, 'doo')}")
 
 
