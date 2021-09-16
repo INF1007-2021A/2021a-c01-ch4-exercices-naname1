@@ -44,10 +44,14 @@ def get_number_of_char(string: str, char: str) -> int:
 def get_number_of_words(sentence: str, word: str) -> int:
     resultat = 0
 
-    for lettre in string:
-        if lettre == char:
+    for k in range(0,len(sentence)):
+        if sentence[k] == word[0]:
+            for j in range(1,len(word)):
+                if sentence[k+j] != word[j]:
+                    k += j
+                    break
+
             resultat += 1
-        print(lettre)
 
     return resultat
 
