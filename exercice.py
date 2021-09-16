@@ -50,9 +50,9 @@ def get_number_of_words(sentence: str, word: str) -> int:
                 if sentence[k+j] != word[j]:
                     k += j
                     break
-
-            resultat += 1
-
+                if j == len(word)-1:
+                    k+=j
+                    resultat += 1
     return resultat
 
 def main() -> None:
