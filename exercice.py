@@ -14,6 +14,8 @@ def remove_third_char(string: str) -> str:
         if k == 2:
             continue
         resultat += string[k]
+
+    #return string[0,2]+string[3:]
     return resultat
 
 
@@ -42,6 +44,15 @@ def get_number_of_char(string: str, char: str) -> int:
 
 def get_number_of_words(sentence: str, word: str) -> int:
     resultat = 0
+    # ou si on assume  que les mots sont séparer par des espaces:
+    # split_sentence = sentence.split()
+    # count = 0
+
+    # for w in split_sentence:
+    #   if w == word:
+    #       count += 1
+
+    # return count
 
     for k in range(0,len(sentence)):
         if sentence[k] == word[0]:
